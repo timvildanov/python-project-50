@@ -10,7 +10,6 @@ packages = [{include = "hexlet_code"}]
 python = "^3.10"
 argparse = "^1.4.0"
 flake8 = "^6.1.0"
-path = "^16.7.1"
 pyyaml = "^6.0.1"
 
 
