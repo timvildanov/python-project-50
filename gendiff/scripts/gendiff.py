@@ -1,11 +1,12 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
+from gendiff.cli import args_generate
+from gendiff.tree_engine import generate_diff
 
-import argparse
-
-from gendiff import tree_engine
 
 def main():
-    parser = argparse.ArgumentParser()
+    args = args_generate()
+    print(generate_diff(*args))
+
 
 if __name__ == '__main__':
     main()
