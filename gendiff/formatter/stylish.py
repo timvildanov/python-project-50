@@ -33,7 +33,7 @@ def add_string(status, key, value, step):
     return f'{status}{key}: {value}\n'
 
 
-def string(diff, step=0):
+def stylish(diff, step=0):
     keys = sorted(diff)
     result_str = '{\n'
     inner = '    '
@@ -41,7 +41,7 @@ def string(diff, step=0):
     for key in keys:
         if diff[key][0] == 'nested':
             _step = step + 1
-            new_str = f'{_step * inner}{key}: {string(diff[key][1], _step)}'
+            new_str = f'{_step * inner}{key}: {stylish(diff[key][1], _step)}'
             result_str += new_str
         elif diff[key][0] == 'added':
             result_str += add_string('  + ', key, diff[key][1], step)

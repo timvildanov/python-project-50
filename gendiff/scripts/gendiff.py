@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-from gendiff.cli import args_generate
-from gendiff.tree_engine import generate_diff
+from gendiff.cli import get_args
+from gendiff.diff import generate_diff
 
 
 def main():
-    args = args_generate()
+    args = get_args()
     print(generate_diff(*args))
 
 
