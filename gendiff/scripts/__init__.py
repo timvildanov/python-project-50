@@ -2,4 +2,3 @@
 
 """Gendiff start scripts."""
 
-import argparse
