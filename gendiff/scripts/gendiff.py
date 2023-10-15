@@ -1,9 +1,11 @@
 #!/usr/bin/env python
 
+import argparse
 
+from gendiff import tree_engine
 
 def main():
-    pass
+    parser = argparse.ArgumentParser()
 
 if __name__ == '__main__':
     main()

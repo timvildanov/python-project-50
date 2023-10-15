@@ -4,9 +4,10 @@ from gendiff.formats.json import json_format
 from gendiff.formats.plain import plain
 from gendiff.formats.string import string
 
-FORMATTER = {'string': string,
-             'plain': plain,
-             'json': json_format}
+FORMATS = {'string': string,
+           'plain': plain,
+           'json': json_format}
+
 
 def build_diff(initial_dict, changed_dict):
     """Function creates a difference between two dictionaries"""
@@ -28,7 +29,7 @@ def build_diff(initial_dict, changed_dict):
     return diff_dict
 
 
-def generate_diff(first_file, second_file, format='string'):
+def generate_diff(first_file, second_file, _format='string'):
     try:
         first_file = uni_parse(Path(first_file))
         second_file = uni_parse(Path(second_file))
@@ -36,4 +37,4 @@ def generate_diff(first_file, second_file, format='string'):
     except FileNotFoundError:
         return print('Wrong path')
 
-    return FORMATTER[format](build_diff(parse_file))
+    return FORMATS[_format](build_diff(parse_file))

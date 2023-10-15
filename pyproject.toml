@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Educational project. Determines differences between two files"
 authors = ["Timur <tim.vildanov@gmail.com>"]
 readme = "README.md"
-packages = [{include = "hexlet_code"}]
+packages = [{include = "gendiff"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
@@ -17,5 +17,5 @@ gendiff = "gendiff.scripts.gendiff:main"
 
 
 [build-system]
-requires = ["poetry-core"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
