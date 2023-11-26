@@ -12,6 +12,7 @@ FORMATTER = {
 
 
 def get_diff(dicts):
+    '''Main logic'''
     data1 = dicts[0]
     data2 = dicts[1]
     keys = data1.keys() | data2.keys()

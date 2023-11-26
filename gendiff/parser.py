@@ -3,6 +3,7 @@ import yaml
 
 
 def parse(file):
+    '''Type of file function'''
     if file.suffix == '.json':
         with open(file) as f:
             parse_file = json.load(f)
