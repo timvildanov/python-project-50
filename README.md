@@ -1,6 +1,9 @@
 # Generate diff:
 [![Actions Status](https://github.com/timvildanov/python-project-50/workflows/hexlet-check/badge.svg)](https://github.com/timvildanov/python-project-50/actions)
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/2b26206b2d19bc04ccb0/maintainability)](https://codeclimate.com/github/timvildanov/python-project-50/maintainability)
+
+[![Test Coverage](https://api.codeclimate.com/v1/badges/2b26206b2d19bc04ccb0/test_coverage)](https://codeclimate.com/github/timvildanov/python-project-50/test_coverage)
 
 ### Info
 
